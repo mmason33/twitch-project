@@ -4,7 +4,8 @@
   "description": "Project using the Twitch API",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --port=8888"
+    "start": "webpack-dev-server --mode development --port=8888",
+    "build": "webpack --mode development"
   },
   "author": "",
   "license": "ISC",
@@ -15,7 +16,10 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.0",
     "css-loader": "^1.0.0",
+    "mini-css-extract-plugin": "^0.4.4",
+    "node-sass": "^4.10.0",
     "react-hot-loader": "^4.3.11",
+    "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",
     "webpack": "^4.17.1",
     "webpack-cli": "^3.1.0",
@@ -23,6 +27,7 @@
   },
   "dependencies": {
     "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "react-dom": "^16.4.2",
+    "react-load-script": "0.0.6"
   }
 }
